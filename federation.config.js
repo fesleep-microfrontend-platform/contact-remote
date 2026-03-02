@@ -4,7 +4,7 @@ module.exports = withNativeFederation({
   name: 'contact-remote',
 
   exposes: {
-    './ContactHome': './src/app/pages/contact-home/contact-home.ts',  
+    './Contact': './src/app/pages/contact/contact.ts',  
   },
 
   shared: {
