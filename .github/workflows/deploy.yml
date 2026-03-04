@@ -10,6 +10,7 @@ jobs:
     permissions:
       id-token: write
       contents: read
+      packages: read
     uses: fesleep-microfrontend-platform/github-workflows/.github/workflows/deploy-s3.yml@main
     with:
       bucket_name: ${{ vars.BUCKET_NAME }}
