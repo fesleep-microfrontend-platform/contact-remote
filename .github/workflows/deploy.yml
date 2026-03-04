@@ -10,7 +10,6 @@ on:
 jobs:
   deploy:
     uses: fesleep-microfrontend-platform/github-workflows/.github/workflows/deploy-s3.yml@main
-    environment: dev
     permissions:
       id-token: write
       contents: read
