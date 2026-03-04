@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { UiButtonComponent, UiInputComponent } from '@farm/ui-design-system';
+import { UiButtonComponent, UiInputComponent } from '@fesleep-microfrontend-platform/ui-design-system';
 
 @Component({
   selector: 'app-contact',
