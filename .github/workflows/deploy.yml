@@ -16,4 +16,5 @@ jobs:
       aws_region: ${{ vars.AWS_REGION }}
       app_name: ${{ vars.APP_NAME }}
       role_arn: ${{ vars.ROLE_ARN }}
-      npm_token: ${{ secrets.NPM_GITHUB_TOKEN }}
+    secrets:
+      npm_token: NPM_GITHUB_TOKEN
