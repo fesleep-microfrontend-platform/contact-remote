@@ -1,0 +1,15 @@
+name: Deploy Contact MFE
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    uses: fesleep-microfrontend-platform/.github/workflows/deploy-s3.yml@main
+    with:
+      bucket_name: ${{ vars.BUCKET_NAME }}
+      aws_region: ${{ vars.AWS_REGION }}
+      app_name: ${{ vars.APP_NAME }}
+      role_arn: ${{ vars.ROLE_ARN }}
